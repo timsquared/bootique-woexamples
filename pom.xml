@@ -9,7 +9,7 @@
     <url>http://wiki.objectstyle.org/confluence/display/WONDER/Home</url>
 
     <modules>
-        <module>Examples</module>
+        <module>ERComponentTour</module>
     </modules>
 
     <properties>
