@@ -13,7 +13,7 @@
     </modules>
 
     <properties>
-        <skip.apple.frameworks>true</skip.apple.frameworks>
+        <skip.apple.frameworks>false</skip.apple.frameworks>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <webobjects.version>5.4.3</webobjects.version>
