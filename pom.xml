@@ -11,6 +11,7 @@
     <modules>
         <module>ERComponentTour</module>
         <module>ERRestRouteExample</module>
+        <module>BQExample</module>
     </modules>
 
     <properties>
