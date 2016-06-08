@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>wonder</groupId>
-    <artifactId>wonder</artifactId>
-    <version>7.0.0-SNAPSHOT</version>
+    <groupId>org.objectstyle.bootique.wo</groupId>
+    <artifactId>bootique-wo-parent</artifactId>
+    <version>0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
-    <name>Project Wonder</name>
-    <url>http://wiki.objectstyle.org/confluence/display/WONDER/Home</url>
+    <name>Bootique WO</name>
 
     <modules>
         <module>bootique-wo</module>
-        <module>BQExample</module>
+        <module>bq-wo-example</module>
     </modules>
 
     <properties>
@@ -18,6 +17,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <webobjects.version>5.4.3</webobjects.version>
+        <wonder.version>7.0.0-SNAPSHOT</wonder.version>
     </properties>
 
     <build>
@@ -177,12 +177,12 @@
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>JavaWOExtensions</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>ERExtensions</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.core</groupId>
@@ -192,162 +192,162 @@
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>ERDirectToWeb</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>ERPrototypes</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>ERJavaMail</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.core</groupId>
                 <artifactId>WOOgnl</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.d2w</groupId>
                 <artifactId>ERModernDirectToWeb</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.businesslogic</groupId>
                 <artifactId>ERCoreBusinessLogic</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.businesslogic</groupId>
                 <artifactId>BTBusinessLogic</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.businesslogic</groupId>
                 <artifactId>ERTaggable</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.businesslogic</groupId>
                 <artifactId>ERAttachment</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.businesslogic</groupId>
                 <artifactId>ERMoviesLogic</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>Ajax</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>SproutCore</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>YUI</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>ERDivaLook</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>ERIUI</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.reporting</groupId>
                 <artifactId>WRReporting</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.reporting</groupId>
                 <artifactId>DRGrouping</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.reporting</groupId>
                 <artifactId>ERPlot</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.eof</groupId>
                 <artifactId>Validity</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.eof</groupId>
                 <artifactId>ERRest</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.eof</groupId>
                 <artifactId>ERIndexing</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERSelenium</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERCalendar</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERChronic</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>JavaMonitorFramework</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERDirectToRest</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>WOLips</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>EROpenID</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERDivaliteLook</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.misc</groupId>
                 <artifactId>ERJaxWS</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.eoadaptors</groupId>
                 <artifactId>JavaMemoryAdaptor</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>wonder.ajax</groupId>
                 <artifactId>ERCoolComponents</artifactId>
-                <version>${project.version}</version>
+                <version>${wonder.version}</version>
             </dependency>
             <dependency>
                 <groupId>javax.activation</groupId>
@@ -790,24 +790,4 @@
         </pluginRepository>
     </pluginRepositories>
 
-    <distributionManagement>
-        <repository>
-            <id>wocommunity.deployment</id>
-            <name>WOCommunity Maven2 Releases Repository</name>
-            <url>http://maven.wocommunity.org/content/repositories/releases</url>
-        </repository>
-        <snapshotRepository>
-            <id>wocommunity.deployment</id>
-            <uniqueVersion>false</uniqueVersion>
-            <name>WOCommunity Maven2 Snapshots Repository</name>
-            <url>http://maven.wocommunity.org/content/repositories/snapshots/</url>
-        </snapshotRepository>
-    </distributionManagement>
-
-    <scm>
-        <connection>scm:git:git@github.com:wocommunity/wonder.git</connection>
-        <url>scm:git:git@github.com:wocommunity/wonder.git</url>
-        <developerConnection>scm:git:git@github.com:wocommunity/wonder.git</developerConnection>
-      <tag>HEAD</tag>
-  </scm>
 </project>
