@@ -1,4 +1,4 @@
-package com.objectstyle.bq.wo;
+package org.objectstyle.bq.wo;
 
 import org.objectstyle.bootique.wo.WOModule;
 

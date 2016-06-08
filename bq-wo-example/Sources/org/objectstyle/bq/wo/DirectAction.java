@@ -1,6 +1,7 @@
-package com.objectstyle.bq.wo;
+package org.objectstyle.bq.wo;
 
-import com.objectstyle.bq.wo.ui.Main;
+import org.objectstyle.bq.wo.ui.Main;
+
 import com.webobjects.appserver.WOActionResults;
 import com.webobjects.appserver.WORequest;
 

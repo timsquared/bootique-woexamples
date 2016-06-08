@@ -1,4 +1,4 @@
-package com.objectstyle.bq.wo;
+package org.objectstyle.bq.wo;
 
 import er.extensions.appserver.ERXSession;
 

@@ -1,4 +1,4 @@
-package com.objectstyle.bq.wo.ui;
+package org.objectstyle.bq.wo.ui;
 
 import com.webobjects.appserver.WOContext;
 
