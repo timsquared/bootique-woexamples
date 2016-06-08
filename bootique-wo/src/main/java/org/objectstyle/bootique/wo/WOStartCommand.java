@@ -1,5 +1,7 @@
 package org.objectstyle.bootique.wo;
 
+import java.net.URLClassLoader;
+
 import com.google.inject.Inject;
 import com.google.inject.Provider;
 import com.nhl.bootique.annotation.Args;
@@ -15,17 +17,21 @@ public class WOStartCommand implements Command {
 	@Args
 	@Inject
 	private String[] argv;
-	
+
 	@Inject
-	private Provider<Class<? extends WOApplication>> appTypeProvider;
+	private Provider<ERXApplication> appProvider;
 
 	@Override
 	public CommandOutcome run(Cli cli) {
-		
-		Class<? extends WOApplication> appType = appTypeProvider.get();
-		
-		ERXApplication.main(argv, appType);
-		
+
+		ERXApplication.setup(argv);
+		ERXApplication app = appProvider.get();
+
+		// static initializers ... not sure how important each one of those
+		WOApplication._classPathURLs = ((URLClassLoader) app.getClass().getClassLoader()).getURLs();
+
+		app.run();
+
 		return CommandOutcome.succeeded();
 	}
 }

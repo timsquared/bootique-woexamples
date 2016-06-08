@@ -16,16 +16,34 @@
 		<main.class>com.objectstyle.bq.wo.Application</main.class>
 	</properties>
 
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>com.nhl.bootique.bom</groupId>
+				<artifactId>bootique-bom</artifactId>
+				<version>0.16</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.objectstyle.bootique.wo</groupId>
+				<artifactId>bootique-wo</artifactId>
+				<version>0.1-SNAPSHOT</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.objectstyle.bootique.wo</groupId>
 			<artifactId>bootique-wo</artifactId>
-			<version>0.1-SNAPSHOT</version>
+			<scope>compile</scope>
 		</dependency>
-
 		<dependency>
-			<groupId>log4j</groupId>
-			<artifactId>log4j</artifactId>
+			<groupId>com.nhl.bootique.logback</groupId>
+			<artifactId>bootique-logback</artifactId>
+			<scope>compile</scope>
 		</dependency>
 	</dependencies>
 
