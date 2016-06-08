@@ -18,7 +18,7 @@ public class WOModule extends ConfigModule {
 
 	@Singleton
 	@Provides
-	Class<? extends WOApplication> provideApplication() {
+	Class<? extends WOApplication> provideApplicationType() {
 		return ERXApplication.class;
 	}
 
