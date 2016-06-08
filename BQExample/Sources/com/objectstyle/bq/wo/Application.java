@@ -1,15 +1,11 @@
 package com.objectstyle.bq.wo;
 
-import er.extensions.appserver.ERXApplication;
+import com.nhl.bootique.Bootique;
 
-public class Application extends ERXApplication {
+public class Application {
 
 	public static void main(String[] argv) {
-		ERXApplication.main(argv, Application.class);
+		Bootique.app(argv).autoLoadModules().run();
 	}
 
-	public Application() {
-		ERXApplication.log.info("Welcome to " + name() + " !");
-        setPageRefreshOnBacktrackEnabled(true);
-	}
 }

@@ -9,8 +9,7 @@
     <url>http://wiki.objectstyle.org/confluence/display/WONDER/Home</url>
 
     <modules>
-        <module>ERComponentTour</module>
-        <module>ERRestRouteExample</module>
+        <module>bootique-wo</module>
         <module>BQExample</module>
     </modules>
 
