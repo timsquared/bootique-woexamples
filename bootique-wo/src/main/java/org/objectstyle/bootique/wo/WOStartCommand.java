@@ -9,6 +9,7 @@ import com.nhl.bootique.cli.Cli;
 import com.nhl.bootique.command.Command;
 import com.nhl.bootique.command.CommandOutcome;
 import com.webobjects.appserver.WOApplication;
+import com.webobjects.foundation.NSProperties;
 
 import er.extensions.appserver.ERXApplication;
 
@@ -24,7 +25,10 @@ public class WOStartCommand implements Command {
 	@Override
 	public CommandOutcome run(Cli cli) {
 
+		NSProperties._setMainBundleName("myapp");
+
 		ERXApplication.setup(argv);
+
 		ERXApplication app = appProvider.get();
 
 		// static initializers ... not sure how important each one of those

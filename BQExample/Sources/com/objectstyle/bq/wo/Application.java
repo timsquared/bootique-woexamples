@@ -10,7 +10,7 @@ import er.extensions.appserver.ERXApplication;
 public class Application extends ERXApplication {
 
 	public static void main(String[] argv) {
-		Module appModule = binder -> WOModule.contributeApp(binder).to(Application.class);
+		Module appModule = binder -> WOModule.contributeApp(binder, Application.class);
 		Bootique.app(argv).autoLoadModules().module(appModule).run();
 	}
 

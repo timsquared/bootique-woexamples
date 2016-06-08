@@ -9,6 +9,10 @@ import er.extensions.appserver.ERXApplication;
 
 public class WOModule extends ConfigModule {
 
+	public static void contributeApp(Binder binder, Class<? extends ERXApplication> appType) {
+		contributeApp(binder).to(appType);
+	}
+
 	public static AnnotatedBindingBuilder<ERXApplication> contributeApp(Binder binder) {
 		return binder.bind(ERXApplication.class);
 	}
